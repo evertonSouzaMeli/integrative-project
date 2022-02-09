@@ -11,6 +11,7 @@
 
     <modules>
         <module>stock</module>
+        <module>shipment</module>
     </modules>
 
     <groupId>com.meli.bootcamp</groupId>
