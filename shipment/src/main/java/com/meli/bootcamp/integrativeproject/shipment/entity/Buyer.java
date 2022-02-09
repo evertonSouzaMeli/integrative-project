@@ -7,9 +7,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
-import java.util.Locale;
 
 @Document(collection = "buyer")
 @NoArgsConstructor
