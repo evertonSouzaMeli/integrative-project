@@ -2,13 +2,11 @@ package com.meli.bootcamp.stock.controller;
 
 import com.meli.bootcamp.stock.dto.response.ProductBatchResponseDTO;
 import com.meli.bootcamp.stock.dto.response.ProductResponseDTO;
+import com.meli.bootcamp.stock.dto.response.ProductResponseExternalAPI;
 import com.meli.bootcamp.stock.entity.Product;
 import com.meli.bootcamp.stock.service.ProductService;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -20,6 +18,11 @@ public class ProductController {
 
     public ProductController(ProductService service) {
         this.service = service;
+    }
+
+    @GetMapping("/products/{id}")
+    public ResponseEntity<ProductResponseExternalAPI> getById(@PathVariable Long id){
+        return ResponseEntity.ok().body(service.findById(id));
     }
 
     @GetMapping

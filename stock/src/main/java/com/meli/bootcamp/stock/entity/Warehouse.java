@@ -22,6 +22,9 @@ public class Warehouse {
     @Column(name = "name", nullable = false)
     private String name;
 
+    @Column(name = "cep", nullable = false)
+    private String cep;
+
     @OneToMany(mappedBy = "warehouse")
     @JsonIgnore
     private List<WarehouseSection> warehouseSections;

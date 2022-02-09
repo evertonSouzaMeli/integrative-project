@@ -1,5 +1,6 @@
 package com.meli.bootcamp.stock.service;
 
+import com.meli.bootcamp.stock.dto.response.ProductResponseExternalAPI;
 import com.meli.bootcamp.stock.dto.response.WarehouseProductDTO;
 import com.meli.bootcamp.stock.dto.response.WarehouseProductResponse;
 import com.meli.bootcamp.stock.entity.Product;
@@ -25,6 +26,10 @@ public class ProductService {
 
     public ProductService(ProductRepository productRepository) {
         this.productRepository = productRepository;
+    }
+
+    public ProductResponseExternalAPI findById(Long id){
+        return ProductResponseExternalAPI.toResponse(productRepository.findById(id).orElseThrow(() -> new NotFoundException("Product not found".toUpperCase())));
     }
 
     public List<Product> findAll() {

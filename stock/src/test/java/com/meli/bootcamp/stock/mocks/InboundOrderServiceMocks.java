@@ -34,7 +34,7 @@ public class InboundOrderServiceMocks {
     }
 
     public static Warehouse makeFakeWarehouse() {
-        return new Warehouse(1L, "Armazém de São Paulo", null, null, null);
+        return new Warehouse(1L, "Armazém de São Paulo", null, null, null, null);
     }
 
     public static Agent makeFakeAgent() {
