@@ -34,6 +34,7 @@ endereços referenciados são preenchidps com base na API da [ViaCEP](https://vi
 **Request | Response Models**
 
 [POST] : <http://localhost:8080/api/v1/buyers>
+#
 ```
 {
     "name": "Fulano da Silva",
@@ -42,7 +43,6 @@ endereços referenciados são preenchidps com base na API da [ViaCEP](https://vi
     }
 }
 ```
-#
 ```
 {
     "id": "620648134686cd1fdfa58a83",
@@ -62,9 +62,8 @@ endereços referenciados são preenchidps com base na API da [ViaCEP](https://vi
     }
 }
 ```
-
-
 [POST] : <http://localhost:8080/api/v1/purchase/add-products?buyerCode=COD116788>
+#
 ```
 [
    {
@@ -73,7 +72,7 @@ endereços referenciados são preenchidps com base na API da [ViaCEP](https://vi
    }
 ]
 ```
-#
+
 ```
 {
   "products": [
@@ -89,15 +88,14 @@ endereços referenciados são preenchidps com base na API da [ViaCEP](https://vi
     "dataCriacao": "2022-02-10"
 }
 ```
-#
 [POST] : <http://localhost:8080/api/v1/purchase/finalize-purchase>
+#
 ```
 {
     "buyerCod": "COD116788",
     "shippingService": "40010"
 }
 ```
-#
 ```
 {
     "dataDaCompra": "2022-02-10",
