@@ -126,6 +126,8 @@ endereços referenciados são preenchidps com base na API da [ViaCEP](https://vi
     "totalPurchase": 42.50
 }
 ```
+##PDF do escopo do projeto
+<https://drive.google.com/file/d/1hwU_AX-GhkjUl12B5IZ_KNlVo3UmpGYE/view?usp=sharing>
 
 ## Contato
 E-mail: everton.vsilva@mercadolivre.com

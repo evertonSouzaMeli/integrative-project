@@ -1,5 +1,6 @@
 package com.meli.bootcamp.shipment.dto.response;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 
@@ -13,6 +14,7 @@ import java.time.LocalDate;
 public class ProductResponse {
     private String name;
     private Integer quantity;
+    @JsonFormat(pattern="yyyy-MM-dd")
     private LocalDate dueDate;
     private Float price;
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)

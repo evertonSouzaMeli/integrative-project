@@ -1,5 +1,6 @@
 package com.meli.bootcamp.shipment.dto.response;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.meli.bootcamp.shipment.entity.Box;
 import com.meli.bootcamp.shipment.entity.Buyer;
@@ -17,6 +18,7 @@ import java.util.List;
 @Getter
 @Setter
 public class PurchaseResponse {
+    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss")
     private LocalDateTime dataDaCompra;
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private Buyer buyer;
