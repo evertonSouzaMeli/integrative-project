@@ -30,7 +30,6 @@ public class Box {
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private Float peso = 0.0F;
     private BigDecimal valorFrete = new BigDecimal(0).setScale(2, RoundingMode.HALF_EVEN);
-    @JsonFormat(pattern="yyyy-MM-dd")
     private LocalDate previsaoEntrega;
     private WarehouseResponse remetente;
 

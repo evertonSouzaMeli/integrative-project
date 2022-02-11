@@ -20,6 +20,5 @@ public class Cart {
     private List<ProductResponse> products = new ArrayList<>();
     private CartStatus cartStatus = CartStatus.ABERTO;
     private BigDecimal total = new BigDecimal("0.0");
-    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss")
     private LocalDateTime dataCriacao = LocalDateTime.now();
 }

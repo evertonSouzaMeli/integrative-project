@@ -14,7 +14,6 @@ import java.time.LocalDate;
 public class ProductResponse {
     private String name;
     private Integer quantity;
-    @JsonFormat(pattern="yyyy-MM-dd")
     private LocalDate dueDate;
     private Float price;
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)

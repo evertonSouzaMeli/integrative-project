@@ -18,7 +18,6 @@ import java.util.List;
 @Getter
 @Setter
 public class PurchaseResponse {
-    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss")
     private LocalDateTime dataDaCompra;
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private Buyer buyer;
