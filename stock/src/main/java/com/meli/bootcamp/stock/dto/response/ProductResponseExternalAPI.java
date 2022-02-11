@@ -1,6 +1,5 @@
 package com.meli.bootcamp.stock.dto.response;
 
-
 import com.meli.bootcamp.stock.entity.Product;
 import com.meli.bootcamp.stock.entity.Warehouse;
 import com.meli.bootcamp.stock.enums.Category;
